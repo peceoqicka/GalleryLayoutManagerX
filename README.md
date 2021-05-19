@@ -1,13 +1,13 @@
 # GalleryLayoutManagerX - 画廊布局管理器
 
-![Bintray](https://img.shields.io/badge/JCenter-v1.0.6-blue)
+![JitPack](https://img.shields.io/badge/JitPack-v1.0.0-blue)
 ![MinSdk](https://img.shields.io/badge/MinSdk-19-green)
 
 > GalleryLayoutManager是为轮播控件设计的支持无限循环滑动的画廊布局管理器，支持ItemDecoration定制装饰样式。	
 
 ## 注意
 
-这是AndroidX版本，后续的维护更新将主要以此项目为中心。由于`JCenter即将关闭`，遂重新发布到[JitpackIO](https://www.jitpack.io/)。旧版本仍会修复少量BUG
+这是AndroidX版本，后续的维护更新将主要以此项目为中心，旧版本项目[请查看](https://github.com/peceoqicka/GalleryLayoutManager)。由于`JCenter即将关闭`，遂重新发布到[JitpackIO](https://www.jitpack.io/)。旧版本仍会修复少量BUG
 
 ## 特点
 - [x] Android X专用，采用Kotlin编写
@@ -17,24 +17,27 @@
 - [x] 支持按比例缩放Item和透明度变化
 - [x] 支持完全自定义Item变化（ViewTransformListener）
 
-## 更新日志
-
-[更新日志](/docs/update.md)
 
 ## 样式演示
 
-|                              1                               |                              2                               |                              3                               |
-| :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="/previews/glm01_ItemAnimations.gif" alt="动画支持" style="zoom:45%;" /> | <img src="/previews/glm02_Infinite.gif" alt="无限循环" style="zoom:45%;" /> | <img src="/previews/glm03_centerScale.gif" alt="中间项缩放" style="zoom:45%;" /> |
-|                           动画支持                           |                           无限循环                           |                          中间项缩放                          |
-| <img src="/previews/glm04_firstScale.gif" alt="第一项缩放" style="zoom:45%;" /> | <img src="/previews/glm05_customScale.gif" alt="自定义缩放" style="zoom:45%;" /> |                                                              |
-|                          第一项缩放                          |                          自定义缩放                          |                                                              |
+<img src="/previews/glm_1.gif" alt="基本使用" style="zoom:45%;" />
 
 ## DEMO
 
 克隆此项目运行，或下载[demo-apk](https://github.com/peceoqicka/GalleryLayoutManager/blob/master/app/release/app-release.apk)，[demo-apk-androidx](https://github.com/peceoqicka/GalleryLayoutManager/blob/master/appx/release/appx-release.apk)
 
 ## 使用方法
+
+在**root**的**build.gradle**中添加：
+
+```kotlin
+allprojects {
+    repositories {
+        //...
+        maven { url 'https://jitpack.io' }//引用Jitpack IO仓库
+    }
+}
+```
 
 在**app**的**build.gradle**中添加依赖：
 ```groovy
