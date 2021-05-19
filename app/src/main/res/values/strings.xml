@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GalleryLayoutManagerX</string>
+    <string name="is_smooth_scroll">是否平滑滑动</string>
+    <string name="scroll_index">目标位置</string>
+    <string name="scroll_to_index">滑动到目标位置</string>
+    <string name="selected_index">当前选中位置%1$.1f</string>
+
+    <string-array name="index_tab">
+        <item>基础使用</item>
+    </string-array>
+</resources>
