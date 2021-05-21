@@ -7,7 +7,7 @@
 
 ## 注意
 
-这是AndroidX版本，后续的维护更新将主要以此项目为中心，旧版本项目[请查看](https://github.com/peceoqicka/GalleryLayoutManager)。由于`JCenter即将关闭`，遂重新发布到[JitpackIO](https://www.jitpack.io/)。旧版本仍会修复少量BUG
+这是AndroidX版本，后续的维护更新将主要`以此项目为中心`，旧版本项目[请查看](https://github.com/peceoqicka/GalleryLayoutManager)。由于`JCenter即将关闭`，遂重新发布到[JitpackIO](https://www.jitpack.io/)。旧版本仍会修复少量BUG
 
 ## 特点
 - [x] Android X专用，采用Kotlin编写
@@ -18,13 +18,13 @@
 - [x] 支持完全自定义Item变化（ViewTransformListener）
 
 
-## 样式演示
+## 效果预览
 
-<img src="/previews/glm_1.gif" alt="基本使用" style="zoom:45%;" />
+<img src="/previews/glm_1.gif" alt="效果预览" style="zoom:30%;" />
 
 ## DEMO
 
-克隆此项目运行，或下载[demo-apk](https://github.com/peceoqicka/GalleryLayoutManager/blob/master/app/release/app-release.apk)，[demo-apk-androidx](https://github.com/peceoqicka/GalleryLayoutManager/blob/master/appx/release/appx-release.apk)
+克隆此项目运行，或下载[demo-apk](https://github.com/peceoqicka/GalleryLayoutManagerX/blob/master/app/release/app-release.apk)
 
 ## 使用方法
 
@@ -41,10 +41,11 @@ allprojects {
 
 在**app**的**build.gradle**中添加依赖：
 ```groovy
-implementation 'com.peceoqicka:gallerylayoutmanagerx:1.0.6'
+implementation 'com.github.peceoqicka:GalleryLayoutManagerX:1.0.0'
 ```
 
 **你需要添加的额外的依赖库：**
+
 ```groovy
 implementation 'com.google.android.material:material:1.1.0'
 //或者
@@ -90,7 +91,7 @@ snapHelper = LinearSnapHelper()
 ### 滑动回调
 
 ```kotlin
-GalleryLayoutManager.builder{
+GalleryLayoutManager.create {
     onScrollListener = object: OnScrollListener() {
         @Override
         public void onIdle(int snapViewPosition) {

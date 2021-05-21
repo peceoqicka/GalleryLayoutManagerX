@@ -63,7 +63,6 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1"
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.3.1"
 
-    debugImplementation 'com.github.peceoqicka:GalleryLayoutManagerX:1.0.0'
-    releaseImplementation project(':library')
-    //releaseImplementation 'com.peceoqicka:gallerylayoutmanagerx:1.0.6'
+    debugImplementation project(':library')
+    releaseImplementation 'com.github.peceoqicka:GalleryLayoutManagerX:1.0.0'
 }
