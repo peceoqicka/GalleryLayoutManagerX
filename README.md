@@ -24,7 +24,7 @@
 
 ## DEMO
 
-克隆此项目运行，或下载[demo-apk](https://github.com/peceoqicka/GalleryLayoutManagerX/blob/master/app/release/app-release.apk)
+克隆此项目运行，或下载[demo-apk](https://github.com/peceoqicka/GalleryLayoutManagerX/blob/main/app/release/app-release.apk)
 
 ## 使用方法
 
